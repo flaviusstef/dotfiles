@@ -1,0 +1,7 @@
+[user]
+	name = Flavius Stef
+	email = flavius_stef@yahoo.com
+[alias]
+	st = status
+	ci = commit
+	co = checkout
