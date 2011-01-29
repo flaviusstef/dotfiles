@@ -1,3 +1,11 @@
 Bash preferences
 
 Move to ~, then add ". ~/.bashrc_flavius" to ~/.bashrc
+
+# Link files
+cd
+ln -s dotfiles/.vimrc 
+ln -s dotfiles/.gvimrc 
+ln -s dotfiles/.hgrc 
+ln -s dotfiles/.gitconfig 
+
