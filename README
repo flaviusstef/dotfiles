@@ -8,4 +8,4 @@ ln -s dotfiles/.vimrc
 ln -s dotfiles/.gvimrc 
 ln -s dotfiles/.hgrc 
 ln -s dotfiles/.gitconfig 
-
+ln -s dotfiles/.vim
