@@ -1,9 +1,6 @@
-Bash preferences
-
-Move to ~, then add ". ~/.bashrc_flavius" to ~/.bashrc
-
-# Link files
-cd
+# Clone into ~, then link files
+cd ~
+ln -s dotfiles/.bashrc_flavius
 ln -s dotfiles/.vimrc 
 ln -s dotfiles/.gvimrc 
 ln -s dotfiles/.hgrc 
