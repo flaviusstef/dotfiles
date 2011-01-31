@@ -1,3 +1,4 @@
 PS1="[\W]\$ "
 alias grep='grep --color=auto --binary-files=without-match --devices=skip'
+alias wrk='cd ~/Work'
 
