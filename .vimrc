@@ -5,6 +5,7 @@ set incsearch
 set hlsearch
 syntax on
 colorscheme railscasts
+set wrap
 
 if has("autocmd")
   autocmd BufWritePost .vimrc source $MYVIMRC
