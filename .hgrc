@@ -1,6 +1,7 @@
 # This is a Mercurial configuration file.
 [ui]
 username = Flavius Stef <flavius@syneto.net>
+editor = vim
 
 [extensions]
 fetch =
