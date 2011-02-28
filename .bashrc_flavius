@@ -1,4 +1,4 @@
-PS1="[\W]\$ "
+export PS1="\n\e[0;34m\w\e[m\n$ "
 alias grep='grep --color=auto --binary-files=without-match --devices=skip'
 alias wrk='cd ~/Work'
 
