@@ -9,6 +9,8 @@ compiler ruby
 set tabpagemax=100
 set go-=T
 set bg=dark
+set cursorline
+colorscheme railscasts
 set listchars=tab:▸\ ,eol:¬
 set autoindent
 set smartindent

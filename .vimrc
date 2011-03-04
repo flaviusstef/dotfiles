@@ -4,7 +4,7 @@ call pathogen#helptags()
 " Status line
 set laststatus=2
 set statusline=%m\ %F%=\(%l/%L,\ %p%%\)%r
-set cursorline
+set nocursorline
 
 set linebreak
 set number
@@ -15,7 +15,8 @@ set nocompatible
 
 " Indenting & syntax
 syntax on
-colorscheme railscasts
+set bg=dark
+colorscheme desert
 filetype on
 filetype indent on
 
