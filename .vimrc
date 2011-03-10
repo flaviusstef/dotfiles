@@ -33,7 +33,6 @@ vmap <D-]> >gv
 vmap <C-Up> xkP`[V`]
 vmap <C-Down> xp`[V`]
 
-
 " Autocorrect
 iab perche perché
 iab piu più 
