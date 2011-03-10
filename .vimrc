@@ -12,6 +12,7 @@ set incsearch
 set hlsearch
 set wrap
 set nocompatible
+set wildmode=list:longest "tab auto-completion
 
 " Indenting & syntax
 syntax on
