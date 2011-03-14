@@ -13,6 +13,7 @@ set hlsearch
 set wrap
 set nocompatible
 set wildmode=list:longest "tab auto-completion
+set scrolloff=2 "leave some breathing room"
 
 " Indenting & syntax
 syntax on
