@@ -1,10 +1,10 @@
-export PS1="\n\e[0;36m(\h) \e[m\e[0;34m\w\e[m\n$ "
+export PS1="\n\e[0;36m(\h) \e[m\e[0;34m\w\e[m \$(echo \`__git_ps1\`)\n$ "
 export EDITOR="vim"
+
+# aliases
 alias grep='grep --color=auto --binary-files=without-match --devices=skip'
 alias wrk='cd ~/Work'
-if [[ -s "$HOME/.rvm/scripts/rvm" ]] ; then 
-	source "$HOME/.rvm/scripts/rvm" \ 
-fi
+alias dl='cd ~/Downloads'
 
-#rvm
+# rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
