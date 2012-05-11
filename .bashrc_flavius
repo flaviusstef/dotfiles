@@ -5,6 +5,9 @@ export EDITOR="vim"
 alias grep='grep --color=auto --binary-files=without-match --devices=skip'
 alias wrk='cd ~/Work'
 alias dl='cd ~/Downloads'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
 
 # rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
