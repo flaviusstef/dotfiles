@@ -27,6 +27,7 @@ filetype indent on
 map <F2> :!php %<CR>
 map <F3> :!phpunit %<CR>
 map <C-F1> :NERDTreeToggle<CR>
+nmap <C-S> :w<CR>
 nmap <C-Tab> :bn<CR>
 nmap <D-i> :set list!<CR>
 nmap <D-[> <<
