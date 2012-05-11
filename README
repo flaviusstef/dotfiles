@@ -6,6 +6,7 @@ ln -s dotfiles/.gvimrc
 ln -s dotfiles/.hgrc 
 ln -s dotfiles/.gitconfig 
 ln -s dotfiles/.vim
+ln -s dotfiles/.vrapperrc
 
 # Edit .bashrc, .profile or whatever
 # Add
