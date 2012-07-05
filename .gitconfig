@@ -6,3 +6,4 @@
 	ci = commit
 	co = checkout
 	br = branch
+	pom = push origin master
