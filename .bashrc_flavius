@@ -8,6 +8,12 @@ alias dl='cd ~/Downloads'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+if [ `uname -n` == "vaio" ]; then
+  # home pc
+  alias sc='cd ~/Dropbox/Scrum\ Course/'
+  alias lc='cd ~/Work/Leadership-Course/'
+  alias usc='cd ~/Work/User-Stories/'
+fi
 
 # rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
