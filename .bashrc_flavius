@@ -1,7 +1,10 @@
 export PS1="\n\e[0;36m(\h) \e[m\e[0;34m\w\e[m \$(echo \`__git_ps1\`)\n$ "
 export EDITOR="vim"
+# also in the command line
+set -o vi
 
 # aliases
+alias sublime=/opt/sublime/sublime_text
 alias grep='grep --color=auto --binary-files=without-match --devices=skip'
 alias wrk='cd ~/Work'
 alias dl='cd ~/Downloads'
@@ -14,6 +17,9 @@ if [ `uname -n` == "vaio" ]; then
   alias lc='cd ~/Work/Leadership-Course/'
   alias usc='cd ~/Work/User-Stories/'
 fi
+
+# exports
+export PATH=/opt/sbt/bin:$PATH
 
 # rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
