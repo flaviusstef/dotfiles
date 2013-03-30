@@ -11,7 +11,10 @@ alias dl='cd ~/Downloads'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
-if [ `uname -n` == "vaio" ]; then
+alias o=xdg-open
+
+# aliases for courses
+if [ `uname -n` == "vaio" -o `uname -n` == "galileo" ]; then
   # home pc
   alias sc='cd ~/Dropbox/Scrum\ Course/'
   alias lc='cd ~/Work/Leadership-Course/'
@@ -23,3 +26,6 @@ export PATH=/opt/sbt/bin:$PATH
 
 # rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
+# include local bashrc
+source .bashrc_local
