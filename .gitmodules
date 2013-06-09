@@ -6,7 +6,7 @@
 	url = https://github.com/airblade/vim-rooter.git
 [submodule ".vim/bundle/vim-rspec"]
 	path = .vim/bundle/vim-rspec
-	url = https://github.com/skwp/vim-rspec
+	url = https://github.com/skwp/vim-rspec.git
 [submodule ".vim/bundle/command-t"]
 	path = .vim/bundle/command-t
 	url = https://github.com/wincent/Command-T.git
