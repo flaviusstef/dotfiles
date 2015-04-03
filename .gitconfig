@@ -7,3 +7,9 @@
 	co = checkout
 	br = branch
 	pom = push origin master
+	di = diff --color
+[core]
+	editor = gvim -f
+	autocrlf = input
+[color]
+	ui = auto
