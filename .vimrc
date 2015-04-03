@@ -3,7 +3,7 @@ call pathogen#helptags()
 
 " Status line
 set laststatus=2
-set statusline=%m\ %F%=\(%l/%L,\ %p%%\)%r
+set statusline=%m\ %F%=\(%l/%L,\ %c,\ %p%%\)%r
 set nocursorline
 
 set linebreak
