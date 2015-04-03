@@ -1,12 +1,14 @@
 # Clone into ~, then link files
 cd ~
 ln -s dotfiles/.bashrc_flavius
+ln -s dotfiles/.bashrc_local
 ln -s dotfiles/.vimrc 
 ln -s dotfiles/.gvimrc 
 ln -s dotfiles/.hgrc 
 ln -s dotfiles/.gitconfig 
 ln -s dotfiles/.vim
 ln -s dotfiles/.vrapperrc
+ln -s dotfiles/.irbrc
 
 # Edit .bashrc, .profile or whatever
 # Add

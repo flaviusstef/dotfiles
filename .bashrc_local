@@ -1,1 +1,2 @@
 # Add here all local stuff
+alias jira='/opt/jira/bin/startup.sh'
