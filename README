@@ -10,6 +10,4 @@ ln -s dotfiles/.vim
 ln -s dotfiles/.vrapperrc
 ln -s dotfiles/.irbrc
 
-# Edit .bashrc, .profile or whatever
-# Add
-source ~/.bashrc_flavius
+echo 'source ~/.bashrc_flavius' >> ~/.bashrc
