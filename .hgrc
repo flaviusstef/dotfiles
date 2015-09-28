@@ -1,14 +1,23 @@
 # This is a Mercurial configuration file.
 [ui]
-username = Flavius Stef <flavius@syneto.net>
+username = Flavius Stef <flavius@syneto.eu>
 editor = vim
 
 [extensions]
 fetch =
 mq =  
+zeroconf = 
 
 [diff]
 git = 1
 
-[http_proxy]
-host = 192.168.1.1:3128
+[merge-tools]
+filemerge.executable=/Developer/Applications/Utilities/FileMerge.app/Contents/MacOS/FileMerge
+filemerge.args=-left $other -right $local -ancestor $base -merge $output
+filemerge.gui=True
+ 
+[hooks]
+# Prevent "hg pull" if MQ patches are applied.
+prechangegroup.mq-no-pull = ! hg qtop > /dev/null 2>&1
+# Prevent "hg push" if MQ patches are applied.
+preoutgoing.mq-no-push = ! hg qtop > /dev/null 2>&1
