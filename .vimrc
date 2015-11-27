@@ -16,10 +16,12 @@ set wildmode=list:longest "tab auto-completion
 set scrolloff=2 "leave some breathing room"
 set ignorecase "case-insensitive searching
 
-" Indenting & syntax
-syntax on
+" Looks
 set bg=dark
 colorscheme desert
+
+" Indenting & syntax
+syntax on
 filetype on
 filetype indent on
 
