@@ -16,7 +16,8 @@ set autoindent
 set smartindent
 if &background == "dark"
 	hi normal guibg=black
-  if has("mac")
-	  set transp=8
-  endif
+endif
+if has("gui_macvim")
+  set guifont=Menlo:h14
+  set transp=8
 endif
