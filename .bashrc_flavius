@@ -1,3 +1,4 @@
+alias __git_ps1="git branch 2>/dev/null | grep '*' | sed 's/* \(.*\)/(\1)/'"
 export PS1="\n\e[0;36m(\h) \e[m\e[0;34m\w\e[m \$(echo \`__git_ps1\`)\n$ "
 export EDITOR="vim"
 # also in the command line
@@ -11,7 +12,10 @@ alias dl='cd ~/Downloads'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
-alias o=xdg-open
+
+if [ `uname -s` == "Darwin" ]; then
+  alias ls='ls -G'
+fi
 
 # aliases for courses
 if [ `uname -n` == "vaio" -o `uname -n` == "galileo" ]; then
@@ -19,6 +23,7 @@ if [ `uname -n` == "vaio" -o `uname -n` == "galileo" ]; then
   alias sc='cd ~/Dropbox/Scrum\ Course/'
   alias lc='cd ~/Work/Leadership-Course/'
   alias usc='cd ~/Work/User-Stories/'
+  alias o=xdg-open
 fi
 
 # exports
