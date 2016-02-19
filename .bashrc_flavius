@@ -1,3 +1,24 @@
+install() {
+  local what
+  what=$1
+  case $what in
+    phpunit)
+      if [ "$(which phpunit)" != "" ]; then
+        echo "Already installed!"
+      else
+	echo "Installing PHP Unit"
+	curl -OL https://phar.phpunit.de/phpunit.phar
+	chmod +x phpunit.phar
+	sudo mv phpunit.phar /usr/local/bin/phpunit
+	phpunit --version
+      fi
+      ;;
+
+    *)
+      echo "Don't know how to install $what"
+  esac
+}
+
 alias __git_ps1="git branch 2>/dev/null | grep '*' | sed 's/* \(.*\)/(\1)/'"
 export PS1="\n\e[0;36m(\h) \e[m\e[0;34m\w\e[m \$(echo \`__git_ps1\`)\n$ "
 export EDITOR="vim"
