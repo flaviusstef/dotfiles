@@ -8,6 +8,7 @@
 	br = branch
 	pom = push origin master
 	di = diff --color
+	lol = log --pretty=medium --date=rfc
 [core]
 	editor = gvim -f
 	autocrlf = input
@@ -15,3 +16,7 @@
 	ui = auto
 [push]
 	default = simple
+[format]
+	pretty = format:%Cblue%h %Cred%cn %Cgreen%cd%Creset %s
+[log]
+	date = short
