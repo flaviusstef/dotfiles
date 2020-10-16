@@ -10,4 +10,7 @@ ln -s dotfiles/.vim
 ln -s dotfiles/.vrapperrc
 ln -s dotfiles/.irbrc
 
+# Linux
+echo 'source ~/.bashrc_flavius' >> ~/.bashrc
+# macOS
 echo 'source ~/.bashrc_flavius' >> ~/.bashrc

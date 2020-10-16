@@ -19,6 +19,10 @@ install() {
   esac
 }
 
+# Suppress "The default interactive shell is now zsh." message
+# On macOS
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 alias __git_ps1="git branch 2>/dev/null | grep '*' | sed 's/* \(.*\)/(\1)/'"
 export PS1="\n\e[0;36m(\h) \e[m\e[0;34m\w\e[m \$(echo \`__git_ps1\`)\n$ "
 export EDITOR="vim"
